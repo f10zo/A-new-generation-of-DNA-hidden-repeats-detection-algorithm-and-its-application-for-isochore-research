@@ -58,7 +58,8 @@ This project proposes a segmentation algorithm that:
 
 For questions or collaboration interests, please contact:
 
-Your Name — your.email@example.com  
+Fatmeh Zoabi — fatmehzo3bi10@gmail.com  
+Khalil Mansour – Khalel.Mnsor@e.braude.ac.il
 GitHub: https://github.com/f10zo
 
 ---

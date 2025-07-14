@@ -27,13 +27,13 @@ This project addresses the challenge by:
 
 - Segmenting DNA sequences into fixed-length windows.
 - Detecting **dominant k-mer patterns** using frequency analysis.
-- Quantifying **statistical significance** using binomial models.
+- Quantifying **statistical significance** using P-values and a segment scoring strategy.
+- Applying **Fisher's method** to combine multiple P-values for more robust signal detection.
 - Iteratively **merging segments** based on shared features and noise thresholds.
 
 ---
 
 ## ⚙️ Methodology Overview
-
 ### Step-by-Step Process:
 
 1. **Initial Segmentation**  
@@ -43,70 +43,103 @@ This project addresses the challenge by:
    → Count all k-mers (default k=3) in each segment.
 
 3. **Dominant k-mer Identification**  
-   → Detect the most frequent k-mer per segment.
+   → Identify the most frequent k-mer within each segment.
 
 4. **Statistical Significance Testing**  
-   → Compute:
-   - **P-values** via binomial distribution.
-   - **E-values** for multiple testing correction.
+   → Evaluate how likely the dominant k-mer pattern is due to chance using:
+   - **P-values**: Calculated from a binomial model based on expected vs. observed k-mer frequencies.
+   - **Fisher’s Method**: Combine multiple P-values (from the occurrence matrix) to produce a single test statistic.
+   - **Chi-squared Distribution**: Used to convert Fisher’s statistic into a combined P-value, enabling interpretation of overall segment significance.
 
 5. **Segment Merging**  
    → Merge adjacent segments with the same dominant k-mer.  
-   → Account for noisy intermediate segments using heuristic rules.
+   → Account for noisy or weak segments using conditional logic during merging.
 
-6. **Classification**  
-   → Label segments as **strong** (signal) or **weak** (noise).
+6. **Final Classification**  
+   → Classify segments as **strong** (signal) or **weak** (noise) based on:
+   - The combined Fisher P-value,
+   - Segment score,
+   - And the overall structure and continuity of patterns.
 
 ---
 
 ## 📊 Visual Workflow
 
-Here’s a simplified conceptual flowchart (can be replaced with an image later):
+Here's a conceptual workflow (replace with image later):
 
-+---------------------+
-| Initial Segmentation|
-+---------------------+
++-------------------------+
+| Initial Segmentation |
++-------------------------+
 ↓
-+---------------------+
++-------------------------+
 | k-mer Frequency |
-+---------------------+
++-------------------------+
 ↓
-+---------------------+
++-------------------------+
 | Dominant k-mer Found |
-+---------------------+
++-------------------------+
 ↓
-+-------------------------------+
-| Statistical Significance Test|
-+-------------------------------+
++----------------------------------------+
+| P-value + Segment Score + Fisher Combo |
++----------------------------------------+
 ↓
-+---------------------+
++-------------------------+
 | Segment Merging |
-+---------------------+
++-------------------------+
 ↓
-+---------------------+
-| Final Classification|
-+---------------------+
++-------------------------+
+| Final Classification |
++-------------------------+
 
+
+---
 
 ## 📌 Current Status
 
 - ✅ Theoretical model finalized.
 - ✅ Segmentation and k-mer logic designed.
-- 🧪 P-value & E-value computation tested.
+- 🧪 P-value, segment score, and Fisher combination logic under development.
 - ⚙️ Algorithm implementation (in Python) is ongoing.
 - 📖 Thesis writing in progress.
 - 🔬 Future testing will involve real genomic datasets.
 
 ---
 
-## 🚀 Future Plans
+## 🚀 Research Plan
 
-- [ ] Implement algorithm in Python.
-- [ ] Add dataset loaders and parsers.
-- [ ] Integrate data visualization tools (e.g., GC plots, repeat maps).
-- [ ] Run experiments on human genome samples.
-- [ ] Compare results with known annotations (GENCODE, UCSC).
-- [ ] Publish a paper and release full code with documentation.
+### 🔬 Objectives
+
+- Map **hidden repeats** within isochores using DNA sequences.
+- Use reference data from genomic databases.
+- Analyze genomes from multiple species (e.g., monkey, dog).
+- Compare hidden repeat maps with known isochore structures to assess correlation.
+
+### 🛠️ Planned Steps
+
+1. **Construct Hidden Repeat Maps**
+   - Generate repeat-based segmentations for each genome.
+   - Represent each map as a data structure for comparison.
+
+2. **Use Genomic Databases**
+   - Source DNA sequences from public genome repositories.
+
+3. **Analyze Multiple Species**
+   - Perform segmentation on dozens of genomes across different species.
+   - Focus on evolutionary comparison between organisms.
+
+4. **Compare Maps Across Species**
+   - Measure similarity between hidden repeat maps using metrics such as:
+     - **Jaccard Index**
+     - **Cosine Similarity**
+   - Evaluate how well the structure of repeats aligns with isochore organization.
+
+5. **Fragmentation Comparison**
+   - Analyze and compare segmentations (fragment boundaries) between species.
+   - Use existing segmentation comparison algorithms to assist with structural comparison.
+
+---
+
+*These steps will help test the hypothesis that hidden repeats influence or align with isochore structure across evolutionary scales.*
 
 ---
 
@@ -120,4 +153,3 @@ GitHub: [github.com/f10zo](https://github.com/f10zo)
 ---
 
 > ⚠️ *This repository is under active development and will be updated frequently as the research progresses.*
-

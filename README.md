@@ -1,67 +1,123 @@
-# DNA Hidden Repeats Detection Algorithm and Isochore Research
+# 🧬 DNA Hidden Repeats Detection Algorithm and Isochore Research
 
-## Overview
-
-This repository contains ongoing research related to the development of a novel DNA segmentation and hidden repeats detection algorithm. 
-The project aims to improve the identification of biologically relevant genomic regions—such as isochores and hidden repetitive sequences—by leveraging statistical models to distinguish signal from noise in DNA sequences.
-
-The work is part of a broader capstone project titled:  
-**"A new generation of DNA hidden repeats detection algorithm and its application for isochore research."**
+![Status](https://img.shields.io/badge/project-phase%20A-blue)
+![Language](https://img.shields.io/badge/python-planned-yellow)
+![License](https://img.shields.io/badge/license-TBD-lightgrey)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
 ---
 
-## Project Motivation and Background
+## 🧠 Overview
 
-Isochores are large-scale, compositionally homogeneous regions of the genome that have important biological and evolutionary implications. 
-Detecting hidden repeats and segmenting the genome into meaningful regions is challenging due to noise and random patterns in DNA sequences.
+This repository is part of a capstone research project focused on designing a novel algorithm for **DNA segmentation** and the **detection of hidden repeats**.  
+The goal is to identify biologically relevant genomic regions—especially **isochores** and **hidden repetitive sequences**—by applying statistical models that separate **signal** from **noise**.
 
-This project proposes a segmentation algorithm that:
-
-- Divides the genome into fixed-length segments.
-- Uses k-mer frequency analysis to identify dominant sequence patterns.
-- Applies statistical significance testing (P-values and E-values from binomial models) to distinguish strong (biologically meaningful) segments from noise.
-- Implements an iterative merging process resembling hierarchical clustering to refine segment boundaries.
+**📌 Project Title:**  
+**_A new generation of DNA hidden repeats detection algorithm and its application for isochore research_**
 
 ---
 
-## Current Status
+## 🔍 Background & Motivation
 
-- The algorithm and methodology are under active development.
-- The theoretical framework, including statistical testing and merging logic, is being formalized.
-- A written thesis/book chapter is in progress to detail the methods, results, and biological applications.
-- Code implementations and example datasets will be added in the future as the project advances.
+**Isochores** are long, compositionally homogeneous DNA regions with relatively constant GC content. They play key roles in genome organization, gene regulation, and chromosomal structure.
 
----
+However, a possible underlying cause of isochores—**hidden DNA repeats**—is not well understood or easily detected using traditional methods.
 
-## Methodology Summary
+This project addresses the challenge by:
 
-1. **Initial Segmentation:** The genome is divided into fixed-size segments (e.g., 12 nucleotides).
-2. **k-mer Frequency Analysis:** Each segment is analyzed for the frequency of k-mers (default k=3).
-3. **Dominant k-mer Identification:** The most frequent k-mer in each segment is identified.
-4. **Segment Merging:** Adjacent segments with the same dominant k-mer are merged; noisy intermediate segments are accounted for.
-5. **Statistical Significance Testing:** Binomial distribution-based P-values and E-values quantify the likelihood that observed k-mer patterns are non-random.
-6. **Ranking and Classification:** Segments are classified into strong (signal) or weak (noise) categories.
+- Segmenting DNA sequences into fixed-length windows.
+- Detecting **dominant k-mer patterns** using frequency analysis.
+- Quantifying **statistical significance** using binomial models.
+- Iteratively **merging segments** based on shared features and noise thresholds.
 
 ---
 
-## Future Work
+## ⚙️ Methodology Overview
 
-- Implementation of the algorithm in Python or other languages.
-- Testing on real genomic datasets.
-- Visualization of segmentation results.
-- Integration with biological annotation databases for validation.
-- Publication of research findings and source code.
+### Step-by-Step Process:
+
+1. **Initial Segmentation**  
+   → Divide DNA into fixed-size segments (e.g., 12 bp).
+
+2. **k-mer Frequency Analysis**  
+   → Count all k-mers (default k=3) in each segment.
+
+3. **Dominant k-mer Identification**  
+   → Detect the most frequent k-mer per segment.
+
+4. **Statistical Significance Testing**  
+   → Compute:
+   - **P-values** via binomial distribution.
+   - **E-values** for multiple testing correction.
+
+5. **Segment Merging**  
+   → Merge adjacent segments with the same dominant k-mer.  
+   → Account for noisy intermediate segments using heuristic rules.
+
+6. **Classification**  
+   → Label segments as **strong** (signal) or **weak** (noise).
 
 ---
 
-## Contact
+## 📊 Visual Workflow
 
-For questions or collaboration interests, please contact:
+Here’s a simplified conceptual flowchart (can be replaced with an image later):
 
-Fatmeh Zoabi — fatmehzo3bi10@gmail.com  
-Khalil Mansour – Khalel.Mnsor@e.braude.ac.il
-GitHub: https://github.com/f10zo
++---------------------+
+| Initial Segmentation|
++---------------------+
+↓
++---------------------+
+| k-mer Frequency |
++---------------------+
+↓
++---------------------+
+| Dominant k-mer Found |
++---------------------+
+↓
++-------------------------------+
+| Statistical Significance Test|
++-------------------------------+
+↓
++---------------------+
+| Segment Merging |
++---------------------+
+↓
++---------------------+
+| Final Classification|
++---------------------+
+
+
+## 📌 Current Status
+
+- ✅ Theoretical model finalized.
+- ✅ Segmentation and k-mer logic designed.
+- 🧪 P-value & E-value computation tested.
+- ⚙️ Algorithm implementation (in Python) is ongoing.
+- 📖 Thesis writing in progress.
+- 🔬 Future testing will involve real genomic datasets.
 
 ---
 
-*This repository will be updated as the research progresses.*
+## 🚀 Future Plans
+
+- [ ] Implement algorithm in Python.
+- [ ] Add dataset loaders and parsers.
+- [ ] Integrate data visualization tools (e.g., GC plots, repeat maps).
+- [ ] Run experiments on human genome samples.
+- [ ] Compare results with known annotations (GENCODE, UCSC).
+- [ ] Publish a paper and release full code with documentation.
+
+---
+
+## 🤝 Contributors
+
+- **Fatmeh Zoabi** — [fatmehzo3bi10@gmail.com](mailto:fatmehzo3bi10@gmail.com)  
+- **Khalil Mansour** — [Khalel.Mnsor@e.braude.ac.il](mailto:Khalel.Mnsor@e.braude.ac.il)
+
+GitHub: [github.com/f10zo](https://github.com/f10zo)
+
+---
+
+> ⚠️ *This repository is under active development and will be updated frequently as the research progresses.*
+

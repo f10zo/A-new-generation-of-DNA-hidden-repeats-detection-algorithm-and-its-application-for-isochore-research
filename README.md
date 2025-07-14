@@ -1,10 +1,4 @@
 # 🧬 DNA Hidden Repeats Detection Algorithm and Isochore Research
-
-![Status](https://img.shields.io/badge/project-phase%20A-blue)
-![Language](https://img.shields.io/badge/python-planned-yellow)
-![License](https://img.shields.io/badge/license-TBD-lightgrey)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
-
 ---
 
 ## 🧠 Overview

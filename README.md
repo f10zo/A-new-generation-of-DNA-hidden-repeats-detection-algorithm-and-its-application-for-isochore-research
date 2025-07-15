@@ -57,43 +57,11 @@ This project addresses the challenge by:
 
 ---
 
-## 📊 Visual Workflow
-
-Here's a conceptual workflow (replace with image later):
-
-+-------------------------+
-| Initial Segmentation |
-+-------------------------+
-↓
-+-------------------------+
-| k-mer Frequency |
-+-------------------------+
-↓
-+-------------------------+
-| Dominant k-mer Found |
-+-------------------------+
-↓
-+----------------------------------------+
-| P-value + Segment Score + Fisher Combo |
-+----------------------------------------+
-↓
-+-------------------------+
-| Segment Merging |
-+-------------------------+
-↓
-+-------------------------+
-| Final Classification |
-+-------------------------+
-
-
----
-
 ## 📌 Current Status
 
 - ✅ Theoretical model finalized.
 - ✅ Segmentation and k-mer logic designed.
 - 🧪 P-value, segment score, and Fisher combination logic under development.
-- ⚙️ Algorithm implementation (in Python) is ongoing.
 - 📖 Thesis writing in progress.
 - 🔬 Future testing will involve real genomic datasets.
 

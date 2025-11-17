@@ -13,3 +13,4 @@ C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\n
 C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.genruntimeconfig.cache
 C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\ref\DnaRepeatDetector.dll
 C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\Data\gene.fna
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.sourcelink.json

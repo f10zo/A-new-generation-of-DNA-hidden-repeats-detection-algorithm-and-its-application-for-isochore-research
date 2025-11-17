@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DnaRepeatDetector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43ed6f5f1ef5f3348f19b8211255ad5564186c5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DnaRepeatDetector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DnaRepeatDetector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

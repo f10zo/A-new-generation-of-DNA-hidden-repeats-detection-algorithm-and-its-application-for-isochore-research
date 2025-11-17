@@ -1,0 +1,15 @@
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\DnaRepeatDetector.exe
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\DnaRepeatDetector.deps.json
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\DnaRepeatDetector.runtimeconfig.json
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\DnaRepeatDetector.dll
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\DnaRepeatDetector.pdb
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.AssemblyInfoInputs.cache
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.AssemblyInfo.cs
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.csproj.CoreCompileInputs.cache
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.dll
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\refint\DnaRepeatDetector.dll
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.pdb
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\DnaRepeatDetector.genruntimeconfig.cache
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\obj\Debug\net9.0\ref\DnaRepeatDetector.dll
+C:\Users\f10zo\DnaRepeatDetector\DnaRepeatDetector\DnaRepeatDetector\bin\Debug\net9.0\Data\gene.fna
